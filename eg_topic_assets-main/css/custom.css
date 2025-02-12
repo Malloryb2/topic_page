@@ -9,23 +9,28 @@ html {
 body {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.6rem;
+    background-color: #333; 
+    color: #fff; 
 }
 h1, h2 {
     font-family: Arial, sans-serif;
 }
 .container {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr;
     width: 90%;
     margin: auto;
+}
+header, footer, .hero, .content-grid {
+    margin-bottom: 2rem; 
+    padding: 2rem; 
+    background-color: #fff; 
+    color: #333; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 header {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
-    padding: 1rem;
-    margin-bottom: 1rem; 
 }
 header .logo img {
     width: 100px;
@@ -38,13 +43,11 @@ header nav {
 }
 header nav a {
     text-decoration: none;
+    color: #333; 
 }
 .hero {
     display: grid;
     text-align: center;
-    padding: 3rem;
-    margin-bottom: 2rem; /* Added margin for spacing */
-    background-color: #f9f9f9; /* Example background color */
 }
 .hero h1 {
     font-size: 2.5rem;
@@ -59,9 +62,6 @@ header nav a {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     align-items: center;
-    padding: 2rem;
-    margin-bottom: 2rem; /* Added margin for spacing */
-    background-color: #e0e0e0; /* Example background color */
 }
 .content-grid img {
     width: 100%;
@@ -82,11 +82,9 @@ button {
 footer {
     display: grid;
     text-align: center;
-    padding: 1rem;
-    background: #333;
-    color: #fff;
+    background: #fff;
+    color: #333;
     align-items: center;
-    margin-top: 2rem; /* Added margin for spacing */
 }
 @media (max-width: 768px) {
     .content-grid {
