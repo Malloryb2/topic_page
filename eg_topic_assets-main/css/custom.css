@@ -19,9 +19,6 @@ header {
     align-items: center;
     padding: 1rem;
 }
-header .logo {
-    flex: 1;
-}
 header .logo img {
     width: 100px; 
     height: auto;
@@ -29,8 +26,6 @@ header .logo img {
 header nav {
     display: flex;
     gap: 1rem;
-    justify-content: flex-end;
-    flex: 2;
 }
 header nav a {
     text-decoration: none;
