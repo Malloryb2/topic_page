@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
 }
-
 html {
     font-size: 62.5%;  
 }
@@ -15,18 +14,18 @@ h1, h2 {
     font-family: Arial, sans-serif;
 }
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
     padding: 1rem;
-    flex-wrap: nowrap;
+    gap: 1rem;
 }
 header nav {
-    display: flex;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1rem;
 }
 header nav a {
-    margin-left: 1rem;
     text-decoration: none;
 }
 main {
@@ -39,9 +38,8 @@ main {
 .hero {
     text-align: center;
     padding: 3rem;
-    grid-column: span 2; 
+    grid-column: span 2;
 }
-
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -57,19 +55,16 @@ main {
     align-items: center;
     padding: 2rem;
 }
-
 .content-grid img {
     width: 100%;
     height: auto;
     border-radius: 8px;
 }
-
 .content-grid div {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-
 button {
     align-self: start;
     padding: 0.5rem 1rem;
@@ -78,19 +73,19 @@ button {
     border-radius: 4px;
 }
 footer {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
     padding: 1rem;
-    flex-wrap: nowrap;
+    gap: 1rem;
     text-align: center;
 }
 footer nav {
-    display: flex;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1rem;
 }
 footer nav a {
-    margin-left: 1rem;
     text-decoration: none;
 }
 @media (max-width: 768px) {
