@@ -9,8 +9,8 @@ html {
 body {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.6rem;
-    background-color: #333; 
-    color: #fff; 
+    background-color: #333;
+    color: #fff;
 }
 h1, h2 {
     font-family: Arial, sans-serif;
@@ -21,11 +21,9 @@ h1, h2 {
 }
 header, footer, .hero, .content-grid {
     margin-bottom: 2rem; 
-    padding: 2rem; 
-    background-color: #fff; 
-    color: #333; 
-    border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 2rem;
+    background-color: inherit;
+    color: inherit;
 }
 header {
     display: grid;
@@ -43,7 +41,7 @@ header nav {
 }
 header nav a {
     text-decoration: none;
-    color: #333; 
+    color: inherit;
 }
 .hero {
     display: grid;
@@ -66,7 +64,7 @@ header nav a {
 .content-grid img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 0;
 }
 .content-grid div {
     display: grid;
@@ -77,13 +75,13 @@ button {
     padding: 0.5rem 1rem;
     border: none;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 0;
 }
 footer {
     display: grid;
     text-align: center;
-    background: #fff;
-    color: #333;
+    background: inherit;
+    color: inherit;
     align-items: center;
 }
 @media (max-width: 768px) {
@@ -95,3 +93,4 @@ footer {
         align-self: center;
     }
 }
+
